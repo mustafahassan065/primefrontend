@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+* {
+  font-family: 'Verdana', 'Geneva', sans-serif;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Verdana', 'Geneva', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-xl hover:from-green-700 hover:to-green-800 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+}
+
+.btn-secondary {
+  @apply bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-xl hover:from-yellow-600 hover:to-yellow-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+}
+
+.btn-outline {
+  @apply bg-transparent border-2 border-green-600 text-green-600 px-8 py-4 rounded-xl hover:bg-green-600 hover:text-white transition-all duration-300 font-semibold;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent;
+}
+
+.golden-text {
+  @apply bg-gradient-to-r from-yellow-600 to-yellow-800 bg-clip-text text-transparent;
+}
+
+/* Golden accent */
+.golden-accent {
+  @apply text-yellow-500;
+}
+
+.golden-bg {
+  @apply bg-gradient-to-r from-yellow-400 to-yellow-500;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* FAQ accordion styles */
+.faq-item {
+  @apply border-b border-gray-200;
+}
+
+.faq-question {
+  @apply w-full text-left py-6 px-8 bg-white hover:bg-green-50 transition-all duration-300 rounded-lg;
+}
+
+.faq-answer {
+  @apply px-8 pb-6 text-gray-600;
+}
+
+/* Custom badge */
+.badge {
+  @apply inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold;
+}
+
+.badge-primary {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-golden {
+  @apply bg-yellow-100 text-yellow-800;
+}

@@ -563,7 +563,7 @@ export default function Home() {
       </section>
 
       {/* Interactive FAQ Section */}
-      <section id="FAQ" className="py-24 bg-gradient-to-br from-gray-50 to-green-50">
+      <section id="faqs" className="py-24 bg-gradient-to-br from-gray-50 to-green-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">

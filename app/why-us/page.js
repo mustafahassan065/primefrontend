@@ -74,7 +74,7 @@ export default function WhyUs() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url("/images/whyusbg.jpg")'
+            backgroundImage: 'url("/images/whyusBg.jpg")'
           }}
         />
         {/* Green & Gold Overlay */}
